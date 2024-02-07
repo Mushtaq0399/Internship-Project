@@ -47,9 +47,22 @@ With c6r6r5r4r3r2r1r0 being the final product. Hence this is the general mathema
 
 ![image](https://github.com/Mushtaq0399/Internship-Project/assets/139509924/8910bef4-0325-493d-9140-eb783a4bd698)
 
+
+Clearly, this is not an efficient algorithm for the multiplication of large numbers as a lot of propagation delay is involved in such cases. To deal with this problem, we now discuss Nikhilam Sutra which presents an efficient method of multiplying two large numbers. 
+
+## Nikhilam Sutra
+
+Nikhilam Sutra literally means “all from 9 and last from 10”. Although it is applicable to all cases of multiplication, it is more efficient when the numbers involved are large. Since it finds out the compliment of the large number from its nearest base to perform the multiplication operation on it, larger is the original number, lesser the complexity of the multiplication. We first illustrate this Sutra by considering the multiplication of two decimal numbers (96 * 93) where the chosen base is 100 which is nearest to and greater than both these two numbers. 
+
+Documentaion for how nikhilam sutra works in attached above.
+
+- Hardware Implementation
+
+  ![image](https://github.com/Mushtaq0399/Internship-Project/assets/139509924/2e1c6ac7-d854-4399-b37d-e73e9dc850bb)
+
 ## Conclusion 
 
-The hardware realization of a 4-bit multiplier is shown in figure2.3. This hardware design is very similar to that of the famous array multiplier where an array of adders is required to arrive at the final product. 
+The hardware realization of a 4-bit multiplier as shown above. This hardware design is very similar to that of the famous array multiplier where an array of adders is required to arrive at the final product. 
 All the partial products are calculated in parallel and the delay associated is mainly the time taken by the carry to propagate through the adders which form the multiplication array.
 
 Tools used: Modelsim 6.5e and Verilog HDL
